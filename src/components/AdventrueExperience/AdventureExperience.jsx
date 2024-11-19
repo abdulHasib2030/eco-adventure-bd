@@ -22,10 +22,10 @@ const AdventureExperience = () => {
   const {data, user} = useContext(AuthContext)
   return (
     <>
-      <section className="py-10 bg-gray-100">
+      <section className="py-10 my-10 h-[650px] ">
         <h2 className="text-4xl font-bold text-center text-transparent bg-clip-text  bg-gradient-to-r from-indigo-500
                  to-purple-400  mb-8">Adventure Experiences</h2>
-        <Swiper
+        <Swiper 
           onSwiper={setSwiperRef}
           slidesPerView={3}
           centeredSlides={true}
@@ -59,7 +59,7 @@ const AdventureExperience = () => {
           {data.map((adventure) => (
             <SwiperSlide>
 
-              <div key={adventure.id} className="card bg-white shadow-md hover:shadow-lg">
+              <div key={adventure.id} className="card bg-white shadow-md hover:shadow-lg p-4">
                 <figure>
                   <img src={item1} alt={adventure.title} className="w-full h-48 object-cover" />
                 </figure>

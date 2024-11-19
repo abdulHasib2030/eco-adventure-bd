@@ -15,7 +15,9 @@ import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
 
 const Gallery = () => {
     return (
-        <div  className='my-10'>
+      <section className="py-10 my-10 bg-gray-100">
+      <h2 className="text-4xl font-bold text-center text-transparent bg-clip-text  bg-gradient-to-r from-indigo-500
+               to-purple-400  mb-8">Gallery</h2>
         <Swiper
           effect={'coverflow'}
           grabCursor={true}
@@ -65,7 +67,7 @@ const Gallery = () => {
             <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
           </SwiperSlide>
         </Swiper>
-      </div>
+     </section>
     );
 };
 
