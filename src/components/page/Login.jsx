@@ -1,12 +1,16 @@
 import { useContext, useState } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import { FcGoogle } from "react-icons/fc";
+import toast from "react-hot-toast";
+
 
 const Login = () => {
-    const {userLogin, setUser} = useContext(AuthContext)
+    const {userLogin, setUser, googleAuth} = useContext(AuthContext)
     const [error, setError] = useState({})
     const location = useLocation()
     const navigate = useNavigate()
+    console.log(location.state);
   
     const handleSubmit = (e) =>{
       e.preventDefault()
@@ -17,12 +21,21 @@ const Login = () => {
       .then(res => {
         const user = res.user;
         setUser(user)
-        navigate(location?.state ? location.state : '/')
+       toast.success("successfully login")
+        navigate(location?.state ? `/${location.state.id}` : '/')
       })
       .catch((err) =>{
         setError({...error , login: "Invalid login information"})
       })
   
+    }
+
+    const handleGoogleAuth = () =>{
+      googleAuth()
+      .then(res =>{ setUser(res.user)
+     navigate('/')}
+    )
+      .catch (err => setError({user: "Invalid credentials"}))
     }
       return (
         <div
@@ -73,6 +86,11 @@ const Login = () => {
               Register
             </Link>
           </p>
+          <div className="divider lg:divider-horizontal font-semibold">Or continue with</div>
+                <div>
+                    <button onClick={handleGoogleAuth} className='flex items-center btn btn-primary text-xl font-bold w-full mt-2 text-transparent bg-clip-text  bg-gradient-to-r from-indigo-600
+                    to-purple-600 hover:bg-purple-600'> <FcGoogle /> Google</button>
+                </div>
         </div>
       </div>
       );

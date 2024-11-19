@@ -3,7 +3,7 @@ import { AuthContext } from '../provider/AuthProvider';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-    const { user } = useContext(AuthContext)
+    const { user, logOut } = useContext(AuthContext)
     return (
         <div>
             <div className="navbar justify-between bg-base-100 p-7">
@@ -26,18 +26,18 @@ const Navbar = () => {
                         <ul
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-30 mt-3 w-52 p-2 shadow">
-                            <li><a>Home</a></li>
+                            <li className='font-bold text-xl'><Link to={'/'}>Home</Link></li>
 
-                            <li><a>Update Profile</a></li>
+                            <li className='font-bold text-xl'><a>Update Profile</a></li>
                         </ul>
                     </div>
-                    <a className="font-bold px-0 text-transparent bg-clip-text  bg-gradient-to-r from-indigo-600
-                    to-purple-600 text-2xl">ECO-Adventure BD</a>
+                    <Link to={'/'} className="font-bold px-0 text-transparent bg-clip-text md:text-5xl  bg-gradient-to-r from-indigo-600
+                    to-purple-600 text-3xl">ECO-Adventure BD</Link >
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
-                        <li><a>Home</a></li>
-                        <li><a>Update Profile</a></li>
+                        <li className='font-bold text-xl'><Link to={'/'}>Home</Link></li>
+                        <li className='font-bold text-xl'><a>Update Profile</a></li>
                     </ul>
                 </div>
 
@@ -48,7 +48,7 @@ const Navbar = () => {
                                 alt="Tailwind CSS Navbar  component" className='rounded-full'
                                 src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
                         </div>
-                        <a className="border border-black px-4 py-2 font-bold hover:bg-gray-300 ">Logout</a>
+                        <Link onClick={logOut} className="border border-black px-4 py-2 font-bold hover:bg-gray-300 ">Logout</Link>
                     </div>:
                     <div className=" space-x-4">
                         <Link to={'login'} className='border border-black px-4 py-2 font-bold hover:bg-gray-300 '>Login</Link>

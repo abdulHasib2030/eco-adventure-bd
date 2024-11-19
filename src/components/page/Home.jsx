@@ -1,15 +1,23 @@
 import { useLoaderData } from "react-router-dom";
-import AdventureExperience from "../AdventureExperience";
-import Banner from "../Banner";
+import AdventureExperience from "../AdventrueExperience/AdventureExperience";
+import Banner from "../Banner/Banner";
+import Gallery from "../Galery/Gallery";
 
 const Home = () => {
-    const loadData = useLoaderData()
     return (
         <div>
             <header>
             <Banner></Banner>
             </header>
-            <AdventureExperience data={loadData}></AdventureExperience>
+            <main>
+                <section>
+            <AdventureExperience ></AdventureExperience>
+                </section>
+                <section>
+            <Gallery></Gallery>
+                </section>
+
+            </main>
         </div>
     );
 };

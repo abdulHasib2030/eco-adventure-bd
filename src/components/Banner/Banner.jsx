@@ -8,9 +8,9 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import './styles.css';
-import banner1 from '../assets/3.jpg'
-import banner2 from '../assets/4.jpg'
-import banner3 from '../assets/5.jpg'
+import banner1 from '../../assets/3.jpg'
+import banner2 from '../../assets/4.jpg'
+import banner3 from '../../assets/5.jpg'
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';

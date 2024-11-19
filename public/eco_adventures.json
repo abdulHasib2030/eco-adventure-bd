@@ -17,7 +17,8 @@
           "Carry mosquito repellent.",
           "Wear comfortable trekking shoes.",
           "Follow guide instructions strictly."
-      ]
+      ],
+      "summery": "Explore the mysterious and breathtaking Sundarbans, home to the Royal Bengal Tiger, through a unique wildlife safari. This adventure takes you through the world’s largest mangrove forest, offering a perfect blend of nature and excitement. Over 3 days and 2 nights, you’ll witness the diverse flora and fauna, with the chance to spot rare wildlife species. Travel in eco-friendly solar-powered boats and enjoy a plastic-free experience. The tour includes an experienced guide, meals, comfortable accommodations, and a boat ride along the scenic waterways. With a focus on sustainable tourism, this adventure is ideal for those looking for a moderate challenge. The maximum group size is 15, ensuring a more personalized and immersive experience. Special instructions include carrying mosquito repellent, wearing trekking shoes, and strictly following guide instructions for safety."
   },
   {
       "id": 2,
@@ -37,7 +38,8 @@
           "Carry a water bottle and first-aid kit.",
           "Avoid disturbing wildlife.",
           "Respect local traditions."
-      ]
+      ],
+      "summery":"Embark on an unforgettable trekking journey in the serene hill tracts of Bandarban, Chittagong. This advanced-level adventure is designed for those who seek an active and immersive outdoor experience. Over 2 days and 1 night, trek through lush forests, enjoy panoramic views, and connect with the local indigenous culture. Along the way, reusable utensils, biodegradable waste disposal, and minimized deforestation ensure an eco-friendly experience. The tour includes a guide, camping gear, and meals. With a group size of 10, the experience is intimate, allowing you to fully engage with nature. Special instructions focus on respecting wildlife, carrying water and a first-aid kit, and respecting local traditions."
   },
   {
       "id": 3,
@@ -57,7 +59,8 @@
           "Carry sunscreen and a towel.",
           "Avoid stepping on corals.",
           "Follow safety instructions during snorkeling."
-      ]
+      ],
+      "summery":"Dive into the vibrant underwater world of Saint Martin’s Island, Bangladesh’s only coral island, on a day-long snorkeling adventure. Ideal for beginners, this activity lets you explore colorful coral reefs and marine life in crystal-clear waters. The tour emphasizes sustainability, with practices like a marine conservation program, waste collection drives, and the prohibition of single-use plastics. With the help of an experienced instructor, you’ll learn snorkeling techniques, enjoy a delicious lunch, and soak in the natural beauty of the island. The maximum group size of 20 ensures a relaxed and enjoyable experience. Remember to bring sunscreen, a towel, and follow safety instructions while snorkeling to ensure your safety and protect the delicate coral reefs."
   },
   {
       "id": 4,
@@ -77,7 +80,8 @@
           "Wear a life jacket.",
           "Do not litter.",
           "Respect local culture."
-      ]
+      ],
+      "summery":"Discover the mesmerizing Lalakhal, known for its crystal-clear waters and surrounding scenic beauty, with an eco-friendly boat ride. Perfect for beginners, this half-day river adventure in Sylhet is a tranquil escape into nature. The tour provides manual paddling boats, promoting sustainable and waste-free boating. You’ll be accompanied by a local guide who will share insights into the area’s history, culture, and ecology. The ride includes snacks and the chance to support local communities through responsible tourism practices. The maximum group size of 10 ensures a peaceful and intimate experience. It’s important to wear a life jacket, refrain from littering, and respect local culture during the trip."
   },
   {
       "id": 5,
@@ -97,7 +101,8 @@
           "Wear comfortable clothing.",
           "Bring a refillable water bottle.",
           "Avoid picking tea leaves without permission."
-      ]
+      ],
+      "summery":"Immerse yourself in the lush, rolling hills of Sreemangal, Sylhet, with a cycling tour through vibrant tea gardens. This 1-day adventure is perfect for intermediate cyclists, offering breathtaking views of endless tea plantations. Along the way, you’ll enjoy a guided cycling experience, including tea tasting, while learning about the organic farming practices that sustain the region. This eco-friendly tour boasts a zero-carbon footprint and supports organic farming, ensuring a sustainable and enriching experience. The group size is kept small, with a maximum of 8 participants, for a more personalized journey. Bring a refillable water bottle, wear comfortable clothing, and avoid picking tea leaves without permission. This tour is ideal for those looking to enjoy nature, culture, and adventure in a sustainable way."
   },
   {
       "id": 6,
@@ -117,6 +122,7 @@
           "Avoid loud noises.",
           "Do not harm aquatic life.",
           "Carry eco-friendly sunscreen."
-      ]
+      ],
+      "summery":"Experience the serenity of Ratargul Swamp Forest in Sylhet with a half-day canoeing adventure. This activity is perfect for beginners and allows you to navigate through one of the only swamp forests in Bangladesh. The tour is eco-friendly, with canoeing practices that avoid plastic usage, and focuses on community support initiatives. As you glide through the peaceful waterways, keep an eye out for the diverse flora and fauna that call the swamp home. The group size is capped at 12 to ensure a calm and personal experience. Special instructions include avoiding loud noises, protecting aquatic life, and using eco-friendly sunscreen. This adventure offers the perfect blend of tranquility, nature, and sustainability for those seeking a peaceful escape in nature."
   }
 ]
