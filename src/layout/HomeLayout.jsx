@@ -17,7 +17,7 @@ const HomeLayout = () => {
     return <Loading></Loading>
    }
     return (
-        <div className='md:w-11/12 mx-auto'>
+        <div className='md:w-11/12 mx-auto font-sora'>
             <Toaster></Toaster>
             {/* <ToastContainer></ToastContainer> */}
             <header>

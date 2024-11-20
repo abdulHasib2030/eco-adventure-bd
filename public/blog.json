@@ -1,0 +1,190 @@
+[
+    {
+        "id": 1,
+        "title": "Sundarbans Wildlife Expedition: A Thrilling Eco-Adventure",
+        "image": "https://example.com/sundarbans.jpg",
+        "description": "Nestled in the heart of Bangladesh, the Sundarbans, the world's largest mangrove forest, beckons adventurers and nature enthusiasts alike. Famous for its rich biodiversity and the elusive Royal Bengal Tiger, this UNESCO World Heritage Site promises an unforgettable wildlife expedition.",
+        "highlights": {
+          "duration": "3 Days, 2 Nights",
+          "location": "Sundarbans, Khulna",
+          "adventure_level": "Intermediate"
+        },
+        "included_items": [
+          "Expert Guide: Knowledgeable in local wildlife and safety protocols.",
+          "Comfortable Accommodation: Sustainable lodgings ensure a cozy stay.",
+          "Delicious Meals: Fresh, local cuisine.",
+          "Activities: Wildlife spotting, bird watching, and guided boat rides."
+        ],
+        "eco_friendly_features": [
+          "Solar-powered boats",
+          "Plastic-free zones",
+          "Support for local communities"
+        ],
+        "special_instructions": [
+          "Pack mosquito repellent to stay comfortable.",
+          "Wear durable, comfortable shoes for trekking.",
+          "Follow the guide’s instructions to ensure safety."
+        ],
+        "cost": 15000,
+        "booking_availability": "Available",
+        "booking_link": "https://example.com/book-sundarbans-tour",
+        "summary": "Embark on this journey to experience the pristine beauty of Bangladesh’s natural treasures while contributing to sustainable tourism. Let the Sundarbans Wildlife Expedition take you on a memorable adventure that combines thrill, relaxation, and environmental care."
+      },
+      {
+        "id": 2,
+        "title": "Chittagong Hill Tracts Trekking: A Journey Through Serenity",
+        "image": "https://example.com/hill-tracts.jpg",
+        "description": "The Chittagong Hill Tracts in Bandarban, Chittagong, offer an unmatched trekking experience. Known for its breathtaking landscapes, rich indigenous culture, and tranquil ambiance, this adventure is perfect for thrill-seekers looking for an advanced-level trekking challenge.",
+        "highlights": {
+          "duration": "2 Days, 1 Night",
+          "location": "Bandarban, Chittagong",
+          "adventure_level": "Advanced"
+        },
+        "included_items": [
+          "Experienced Guide: Ensuring safety and sharing insights about the region.",
+          "Camping Gear: For a comfortable overnight stay in the wild.",
+          "Nutritious Meals: Energizing food to fuel your trek."
+        ],
+        "eco_friendly_features": [
+          "Reusable utensils",
+          "Biodegradable waste disposal",
+          "Minimized deforestation"
+        ],
+        "special_instructions": [
+          "Carry a refillable water bottle and a basic first-aid kit.",
+          "Respect local traditions and wildlife.",
+          "Ensure minimal environmental impact by avoiding littering."
+        ],
+        "cost": 12000,
+        "booking_availability": "Available",
+        "booking_link": "https://example.com/book-chittagong-trekking",
+        "summary": "This trekking journey combines the thrill of exploring lush forests with the opportunity to immerse yourself in local cultures. Designed for experienced adventurers, the Chittagong Hill Tracts Trekking offers an eco-conscious and intimate experience, leaving you with lasting memories of Bangladesh's natural beauty."
+      },
+      {
+        "id": 3,
+        "title": "Saint Martin’s Island Snorkeling: Dive into a Marine Paradise",
+        "image": "https://example.com/saint-martins.jpg",
+        "description": "Experience the vibrant underwater world of Saint Martin’s Island, Bangladesh's only coral island. This snorkeling adventure is perfect for beginners, offering a rare chance to explore the stunning coral reefs and marine life in crystal-clear waters.",
+        "highlights": {
+          "duration": "1 Day",
+          "location": "Saint Martin's Island, Cox's Bazar",
+          "adventure_level": "Beginner"
+        },
+        "included_items": [
+          "Snorkeling Gear: High-quality equipment for safe exploration.",
+          "Experienced Instructor: Guidance for a seamless snorkeling experience.",
+          "Lunch: A delicious meal to recharge during your adventure."
+        ],
+        "eco_friendly_features": [
+          "Marine conservation program",
+          "No single-use plastics",
+          "Waste collection drives"
+        ],
+        "special_instructions": [
+          "Carry sunscreen and a towel for comfort.",
+          "Avoid stepping on coral reefs to protect marine life.",
+          "Follow safety instructions from the instructor."
+        ],
+        "cost": 8000,
+        "booking_availability": "Available",
+        "booking_link": "https://example.com/book-saint-martins-snorkeling",
+        "summary": "Embark on a day-long adventure at Saint Martin’s Island, where you’ll uncover the beauty of marine ecosystems. This eco-friendly snorkeling experience blends adventure with sustainability, making it a must-try activity for nature lovers and ocean enthusiasts."
+      },
+      {
+        "id":4,
+        "title": "Lalakhal Eco Boat Ride: A Serene River Adventure",
+        "image": "https://example.com/lalakhal.jpg",
+        "description": "Discover the mesmerizing beauty of Lalakhal in Sylhet, with its crystal-clear waters and tranquil surroundings. This eco-friendly boat ride offers a peaceful escape into nature, perfect for beginners and nature lovers alike.",
+        "highlights": {
+          "duration": "Half Day",
+          "location": "Lalakhal, Sylhet",
+          "adventure_level": "Beginner"
+        },
+        "included_items": [
+          "Boat Ride: Eco-friendly manual paddling boats for a sustainable experience.",
+          "Local Guide: Insights into the region’s history, culture, and ecology.",
+          "Snacks: Enjoy light refreshments during your journey."
+        ],
+        "eco_friendly_features": [
+          "Manual paddling boats",
+          "Waste-free boating practices",
+          "Support for local communities through tourism"
+        ],
+        "special_instructions": [
+          "Wear a life jacket for safety.",
+          "Do not litter to preserve the pristine environment.",
+          "Respect local culture and traditions."
+        ],
+        "cost": 5000,
+        "booking_availability": "Available",
+        "booking_link": "https://example.com/book-lalakhal-boat-ride",
+        "summary": "Experience the serene beauty of Lalakhal with an eco-friendly boat ride. Perfect for beginners, this half-day adventure combines tranquility and sustainability, offering a unique way to connect with nature while supporting local communities. Don’t miss this peaceful escape in Sylhet!"
+      },
+      {
+        "id": 5,
+        "title": "Tea Garden Cycling Tour: A Pedal Through Nature's Greenery",
+        "image": "https://example.com/tea-garden.jpg",
+        "description": "Cycle through the lush tea gardens of Sreemangal, Sylhet, and immerse yourself in the natural beauty of rolling hills and vibrant tea plantations. This eco-friendly cycling tour offers breathtaking views and a sustainable adventure for nature enthusiasts.",
+        "highlights": {
+          "duration": "1 Day",
+          "location": "Sreemangal, Sylhet",
+          "adventure_level": "Intermediate"
+        },
+        "included_items": [
+          "Bicycle: High-quality bikes to ensure a smooth ride through the tea gardens.",
+          "Helmet: Safety gear provided for a secure cycling experience.",
+          "Guide: An experienced guide to lead you through the scenic route.",
+          "Tea Tasting: Enjoy the finest local tea as you explore the region."
+        ],
+        "eco_friendly_features": [
+          "Zero carbon footprint",
+          "Support for organic farming practices",
+          "Eco-friendly accommodation"
+        ],
+        "special_instructions": [
+          "Wear comfortable clothing and sturdy shoes for the ride.",
+          "Bring a refillable water bottle to stay hydrated.",
+          "Avoid picking tea leaves without permission to respect the local culture."
+        ],
+        "cost": 7000,
+        "booking_availability": "Available",
+        "booking_link": "https://example.com/book-tea-garden-cycling-tour",
+        "summary": "Embark on a scenic cycling journey through the lush tea gardens of Sreemangal. This eco-friendly tour offers a perfect blend of adventure and sustainability, allowing you to explore the natural beauty of Sylhet while supporting organic farming practices. Ideal for intermediate cyclists, this tour promises a rewarding and sustainable adventure!"
+      },
+      {
+        "id": 6,
+        "title": "Ratargul Swamp Forest Canoeing: A Serene Paddle Through Nature",
+        "image": "https://example.com/ratargul.jpg",
+        "description": "Explore the tranquil beauty of Ratargul Swamp Forest in Sylhet with a peaceful canoe ride. Experience the unique ecosystem of Bangladesh's only swamp forest, navigating through its serene waterways and surrounded by lush greenery.",
+        "highlights": {
+          "duration": "Half Day",
+          "location": "Ratargul, Sylhet",
+          "adventure_level": "Beginner"
+        },
+        "included_items": [
+          "Canoe: Eco-friendly canoes to glide through the swamp's calm waters.",
+          "Guide: A local guide to provide insights into the forest's ecology.",
+          "Snacks: Light refreshments to enjoy during the tour."
+        ],
+        "eco_friendly_features": [
+          "Eco-friendly canoeing",
+          "No plastic zone",
+          "Community support initiatives"
+        ],
+        "special_instructions": [
+          "Avoid making loud noises to maintain the tranquility of the area.",
+          "Do not disturb aquatic life in the swamp.",
+          "Use eco-friendly sunscreen to protect the environment."
+        ],
+        "cost": 4000,
+        "booking_availability": "Available",
+        "booking_link": "https://example.com/book-ratargul-canoeing",
+        "summary": "Experience the peace and beauty of Ratargul Swamp Forest with a half-day canoe ride through its pristine waters. As you glide through this unique swamp forest, you'll encounter a rich diversity of flora and fauna. This eco-friendly adventure ensures minimal impact on the environment while supporting local communities. Perfect for beginners, it's a relaxing and immersive experience in one of Bangladesh's hidden natural wonders."
+      }
+      
+      
+
+      
+      
+      
+]

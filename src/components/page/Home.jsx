@@ -3,23 +3,27 @@ import AdventureExperience from "../AdventrueExperience/AdventureExperience";
 import Banner from "../Banner/Banner";
 import Gallery from "../Galery/Gallery";
 import BlogPosts from "../BlogPosts";
+import Testimonials from "../Testimonials";
 
 const Home = () => {
     const loadData = useLoaderData()
     return (
         <div>
             <header>
-            <Banner></Banner>
+                <Banner></Banner>
             </header>
             <main>
                 <section>
-            <AdventureExperience data = {loadData}></AdventureExperience>
+                    <AdventureExperience data={loadData}></AdventureExperience>
                 </section>
                 <section>
-            <Gallery></Gallery>
+                    <Gallery></Gallery>
                 </section>
                 <section>
                     <BlogPosts></BlogPosts>
+                </section>
+                <section>
+                    <Testimonials></Testimonials>
                 </section>
 
             </main>

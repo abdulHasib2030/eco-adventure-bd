@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "user_name": "Arif Hossain",
+        "rating": 4.8,
+        "review_date": "2024-11-18",
+        "review_text": "Loved every moment of this trek. The guide was fantastic, and the natural beauty is unmatched."
+      },
+      {
+        "id": 2,
+        "user_name": "Nadia Akter",
+        "rating": 4.5,
+        "review_date": "2024-11-17",
+        "review_text": "A fun and safe experience. The instructor was very helpful. Would do it again!"
+      },
+      {
+        "id": 3,
+        "user_name": "Hassan Ali",
+        "rating": 4.5,
+        "review_date": "2024-11-18",
+        "review_text": "The eco-friendly boats and the tranquility of the ride were amazing. Highly recommend it!"
+      },
+      {
+        "id": 4,
+        "user_name": "Mehedi Hasan",
+        "rating": 4.7,
+        "review_date": "2024-11-19",
+        "review_text": "The tour was well-organized, and the tea-tasting session was delightful. A must-try!"
+      },
+      {
+        "id": 5,
+        "user_name": "Sadia Islam",
+        "rating": 4.8,
+        "review_date": "2024-11-18",
+        "review_text": "A relaxing experience in nature. The guides were knowledgeable and friendly."
+      }
+]
