@@ -13,9 +13,9 @@ import Loading from '../components/Loading';
 
 const HomeLayout = () => {
     const {loading} = useContext(AuthContext)
-    if(loading){
-        return <Loading></Loading>
-    }
+   if(loading){
+    return <Loading></Loading>
+   }
     return (
         <div className='md:w-11/12 mx-auto'>
             <Toaster></Toaster>

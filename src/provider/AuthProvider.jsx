@@ -18,8 +18,8 @@ const AuthProvider = ({children}) => {
     return  signInWithPopup(auth, provider)
     }
     const createNewUser = (email, password) =>{
-        setLoading(true)
-        toast.success("Successfully register account.")
+
+       
         return createUserWithEmailAndPassword(auth, email, password)
     }
 
@@ -39,21 +39,16 @@ const AuthProvider = ({children}) => {
         return signOut(auth)
        }
      const userLogin = (email, password)=>{
-        setLoading(true)
-        return signInWithEmailAndPassword(auth, email, password)
-     }
+   
+      return signInWithEmailAndPassword(auth, email, password)
+      
+      }
 
      const updateUserProfile = (updateData) => {
         return updateProfile(auth.currentUser, updateData)
      }
 
-     useEffect(()=>{
-      fetch('eco_adventures.json')
-      .then((res)=> res.json())
-      .then((data) =>{ setData(data)
-        setLoading(false)
-      })
-     },[])
+ 
 
     const authInfo = {
         user, setUser,
@@ -63,7 +58,8 @@ const AuthProvider = ({children}) => {
         loading,
         updateUserProfile,
         googleAuth,
-        data,
+   
+        setLoading,
     }
 
   

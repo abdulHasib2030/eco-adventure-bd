@@ -16,10 +16,12 @@ import './stylesAdventure.css';
 import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 import { AuthContext } from '../../provider/AuthProvider';
 import { Link, Navigate } from 'react-router-dom';
+import Loading from '../Loading';
 
-const AdventureExperience = () => {
+const AdventureExperience = ({data}) => {
   const [swiperRef, setSwiperRef] = useState(null);
-  const {data, user} = useContext(AuthContext)
+  const { user} = useContext(AuthContext)
+ 
   return (
     <>
       <section className="py-10 my-10 h-[650px] ">

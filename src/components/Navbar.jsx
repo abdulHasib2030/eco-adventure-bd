@@ -1,9 +1,12 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '../provider/AuthProvider';
 import { Link } from 'react-router-dom';
+import Loading from './Loading';
 
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext)
+   
+    console.log(user);
     return (
         <div>
             <div className="navbar justify-between bg-base-100 p-7">
@@ -27,8 +30,10 @@ const Navbar = () => {
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-30 mt-3 w-52 p-2 shadow">
                             <li className='font-bold text-xl'><Link to={'/'}>Home</Link></li>
-
-                            <li className='font-bold text-xl'><a>Update Profile</a></li>
+                            {
+                                user && 
+                            <li className='font-bold text-xl'><Link to={'/my-profile'}>My Profile</Link ></li>
+                            }
                         </ul>
                     </div>
                     <Link to={'/'} className="font-bold px-0 text-transparent bg-clip-text md:text-5xl  bg-gradient-to-r from-indigo-600
@@ -37,16 +42,19 @@ const Navbar = () => {
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
                         <li className='font-bold text-xl'><Link to={'/'}>Home</Link></li>
-                        <li className='font-bold text-xl'><a>Update Profile</a></li>
+                        {
+                            user && 
+                        <li className='font-bold text-xl'><Link to={'/my-profile'}>My Profile</Link ></li>
+                        }
                     </ul>
                 </div>
 
                 {
                     user ? <div className=" space-x-4">
-                        <div className="w-10 rounded-full ">
-                            <img
+                        <div className="w-10 rounded-full hover: ">
+                            <img title={user.displayName}
                                 alt="Tailwind CSS Navbar  component" className='rounded-full'
-                                src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                                src={user.photoURL} />
                         </div>
                         <Link onClick={logOut} className="border border-black px-4 py-2 font-bold hover:bg-gray-300 ">Logout</Link>
                     </div>:

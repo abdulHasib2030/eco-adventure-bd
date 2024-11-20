@@ -8,6 +8,9 @@ import Login from "../components/page/Login";
 import Register from "../components/page/Register";
 import ErrorPage from "../components/page/ErrorPage";
 import AdventureDetailsPage from "../components/page/AdventureDetailsPage";
+import PrivateRoute from "./PrivateRoute";
+import UserProfile from "../components/UserProfile";
+import UpdateProfile from "../components/UpdateProfile";
 
 
 const Route = createBrowserRouter([
@@ -19,6 +22,7 @@ const Route = createBrowserRouter([
             {
                 path:'/',
                 element: <Home></Home>,
+                loader: () => fetch('eco_adventures.json')
             },
             {
                 path:'/login',
@@ -30,7 +34,19 @@ const Route = createBrowserRouter([
             },
             {
                 path:'/:id',
-                element: <AdventureDetailsPage></AdventureDetailsPage>
+                element: <PrivateRoute>
+                    <AdventureDetailsPage></AdventureDetailsPage>
+                </PrivateRoute>,
+                loader: () => fetch('eco_adventures.json')
+
+            },
+            {
+                path: '/my-profile',
+                element: <UserProfile></UserProfile>
+            },
+            {
+                path: '/update-profile',
+                element: <UpdateProfile></UpdateProfile>
             }
         ]
     },

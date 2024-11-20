@@ -6,11 +6,11 @@ import toast from "react-hot-toast";
 
 
 const Login = () => {
-    const {userLogin, setUser, googleAuth} = useContext(AuthContext)
+    const {userLogin, setUser, googleAuth, setLoading} = useContext(AuthContext)
     const [error, setError] = useState({})
     const location = useLocation()
     const navigate = useNavigate()
-    console.log(location.state);
+    // console.log(location.state.id);
   
     const handleSubmit = (e) =>{
       e.preventDefault()
@@ -21,7 +21,9 @@ const Login = () => {
       .then(res => {
         const user = res.user;
         setUser(user)
+        
        toast.success("successfully login")
+
         navigate(location?.state ? `/${location.state.id}` : '/')
       })
       .catch((err) =>{
@@ -33,7 +35,7 @@ const Login = () => {
     const handleGoogleAuth = () =>{
       googleAuth()
       .then(res =>{ setUser(res.user)
-     navigate('/')}
+     navigate(location?.state ? `/${location.state.id}` : '/')}
     )
       .catch (err => setError({user: "Invalid credentials"}))
     }
@@ -82,7 +84,7 @@ const Login = () => {
           </form>
           <p className="text-sm text-center mt-4">
             Don't have an account?{" "}
-            <Link to="/register" className="text-primary font-bold">
+            <Link to="/register" state={location?.state && {id: location.state.id}}  className="text-primary font-bold">
               Register
             </Link>
           </p>

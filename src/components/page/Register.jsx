@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../provider/AuthProvider';
 import { FcGoogle } from "react-icons/fc";
 import toast from 'react-hot-toast';
@@ -7,16 +7,22 @@ import toast from 'react-hot-toast';
 
 const Register = () => {
     
-    const { createNewUser, user, setUser, updateUserProfile , googleAuth} = useContext(AuthContext)
+    const { createNewUser, user, setUser, updateUserProfile , googleAuth, setLoading} = useContext(AuthContext)
     const [error, setError] = useState({})
     const navigate = useNavigate()
+    const location = useLocation()
     const handleSubmit = (e) => {
+        
+        // setError({"none": ""})
+        console.log(error);
         e.preventDefault();
         const form = new FormData(e.target)
         const name = form.get('name')
         const photo = form.get('photo')
         const email = form.get('email')
         const password = form.get('password')
+        const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
+       
         if (name.length < 5) {
             setError({  name: "Name can't 5 character less." })
             return
@@ -30,17 +36,20 @@ const Register = () => {
             setError({ email:'Provide Email Address'})
             return
         }
-        if (!password){
-            setError({ password:"Can't empty password field."})
-            return
+        if(!passwordRegex.test(password)){
+            setError({password: "Password must meet one Uppercase, lowercase letter and at least 6 chanacters long."})
+           return
         }
+        
         createNewUser(email, password)
             .then((result) => {
                 const user = result.user;
                 setUser(user)
+              
                 updateUserProfile({ displayName: name, photoURL: photo })
                     .then(() => {
-                        navigate('/')
+                        toast.success("Successfully register account.")
+                        navigate(location?.state ? `/${location.state.id}` : '/')
                     })
                     .catch((err) => {
                         setError({...error, profile: err.message})
