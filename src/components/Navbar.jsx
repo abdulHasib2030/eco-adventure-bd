@@ -5,7 +5,7 @@ import Loading from './Loading';
 
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext)
-   
+
     console.log(user);
     return (
         <div>
@@ -31,8 +31,8 @@ const Navbar = () => {
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-30 mt-3 w-52 p-2 shadow">
                             <li className='font-bold text-xl'><Link to={'/'}>Home</Link></li>
                             {
-                                user && 
-                            <li className='font-bold text-xl'><Link to={'/my-profile'}>My Profile</Link ></li>
+                                user &&
+                                <li className='font-bold text-xl'><Link to={'/my-profile'}>My Profile</Link ></li>
                             }
                         </ul>
                     </div>
@@ -43,24 +43,32 @@ const Navbar = () => {
                     <ul className="menu menu-horizontal px-1">
                         <li className='font-bold text-xl'><Link to={'/'}>Home</Link></li>
                         {
-                            user && 
-                        <li className='font-bold text-xl'><Link to={'/my-profile'}>My Profile</Link ></li>
+                            user &&
+                            <li className='font-bold text-xl'><Link to={'/my-profile'}>My Profile</Link ></li>
                         }
                     </ul>
                 </div>
 
                 {
                     user ? <div className=" space-x-4">
-                        <div className="w-10 rounded-full hover: ">
-                            <img title={user.displayName}
-                                alt="Tailwind CSS Navbar  component" className='rounded-full'
-                                src={user.photoURL} />
+                        <div className="relative group w-12 h-12">
+                           
+                            <img
+                                src={user.photoURL}
+                                alt={`${user.displayName}'s profile`}
+                                className="w-12 h-12 rounded-full border-2 border-indigo-500 object-cover"
+                            />
+
+                            {/* Username on hover */}
+                            <div className="absolute bottom-[-1.5rem] w-24 bg-gray-800 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">
+                                {user.displayName}
+                            </div>
                         </div>
                         <Link onClick={logOut} className="border border-black px-4 py-2 font-bold hover:bg-gray-300 ">Logout</Link>
-                    </div>:
-                    <div className=" space-x-4">
-                        <Link to={'login'} className='border border-black px-4 py-2 font-bold hover:bg-gray-300 '>Login</Link>
-                    </div>
+                    </div> :
+                        <div className=" space-x-4">
+                            <Link to={'login'} className='border border-black px-4 py-2 font-bold hover:bg-gray-300 '>Login</Link>
+                        </div>
                 }
             </div>
         </div>
