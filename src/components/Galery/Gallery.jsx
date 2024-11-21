@@ -49,31 +49,31 @@ const Gallery = () => {
           className="mySwiper"
         >
           <SwiperSlide>
-            <img className='h-full' src={image1} />
+            <img className='h-[500px]' src={image1} />
           </SwiperSlide>
           <SwiperSlide>
-            <img className='h-full' src={image2} />
+            <img className='h-[500px]' src={image2} />
           </SwiperSlide>
           <SwiperSlide>
-            <img className='h-full' src={image3} />
+            <img className='h-[500px]' src={image3} />
           </SwiperSlide>
           <SwiperSlide>
-            <img className='h-full' src={image4} />
+            <img className='h-[500px]' src={image4} />
           </SwiperSlide>
           <SwiperSlide>
-            <img className='h-full' src={image5} />
+            <img className='h-[500px]' src={image5} />
           </SwiperSlide>
           <SwiperSlide>
-            <img className='h-full' src={image6} />
+            <img className='h-[500px]' src={image6} />
           </SwiperSlide>
           <SwiperSlide>
-            <img className='h-full' src={image7} />
+            <img className='h-[500px]' src={image7} />
           </SwiperSlide>
           <SwiperSlide>
-            <img className='h-full' src={image8} />
+            <img className='h-[500px]' src={image8} />
           </SwiperSlide>
           <SwiperSlide>
-            <img className='h-full' src={image9} />
+            <img className='h-[500px]' src={image9} />
           </SwiperSlide>
         </Swiper>
      </section>
