@@ -13,6 +13,7 @@ import UserProfile from "../components/UserProfile";
 import UpdateProfile from "../components/UpdateProfile";
 import ForgotPasssword from "../components/page/ForgotPasssword";
 import BlogDetails from "../components/page/BlogDetails";
+import LoginRedirect from '../components/LoginRedirect'
 
 
 const Route = createBrowserRouter([
@@ -30,11 +31,17 @@ const Route = createBrowserRouter([
             },
             {
                 path:'/login',
-                element: <Login></Login>,
+                element:  
+                <LoginRedirect >
+                <Login />
+              </LoginRedirect>,
             },
             {
                 path: '/register',
-                element: <Register></Register>
+
+                element:   <LoginRedirect >
+                    <Register></Register>
+                    </LoginRedirect>,
             },
             {
                 path:'/:id',

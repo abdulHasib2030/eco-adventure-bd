@@ -51,7 +51,7 @@ const AuthProvider = ({children}) => {
           fetch('blog.json')
           .then(res => res.json())
           .then(blog => setData(blog))
-          .catch(err => console.log("error", err))
+         
         
 
         
@@ -64,7 +64,7 @@ const AuthProvider = ({children}) => {
       },[])
 
      const updateUserProfile = (updateData) => {
-        return updateProfile(auth.currentUser, updateData)
+      return  updateProfile(auth.currentUser, updateData)
      }
 
   

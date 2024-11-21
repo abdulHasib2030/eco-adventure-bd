@@ -7,7 +7,6 @@ import logo from '../assets/sign.png'
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext)
 
-    console.log(user);
     return (
         <div>
             <div className="navbar justify-between bg-base-100 py-7 ">

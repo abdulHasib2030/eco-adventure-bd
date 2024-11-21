@@ -11,9 +11,7 @@ const Register = () => {
     const [error, setError] = useState({})
     const navigate = useNavigate()
     const location = useLocation()
-    if(user){
-        return navigate('/')
-       }
+   
     const handleSubmit = (e) => {
         
         // setError({"none": ""})
@@ -52,6 +50,7 @@ const Register = () => {
                     .then(() => {
                         toast.success("Successfully register account.")
                         navigate(location?.state ? `/${location.state.id}` : '/')
+
                     })
                     .catch((err) => {
                         setError({...error, profile: err.message})
