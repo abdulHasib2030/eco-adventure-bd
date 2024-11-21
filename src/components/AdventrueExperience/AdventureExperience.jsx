@@ -61,7 +61,7 @@ const AdventureExperience = ({data}) => {
           {data.map((adventure) => (
             <SwiperSlide>
 
-              <div key={adventure.id} className="card bg-white shadow-md hover:shadow-lg p-4">
+              <div key={adventure.id} className="card bg-white shadow-md hover:shadow-lg pb-9">
                 <figure>
                   <img src={adventure.image}  className="w-full h-72 object-cover" />
                 </figure>

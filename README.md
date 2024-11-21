@@ -32,8 +32,8 @@ The purpose of this Eco-Adventure BD Website is to promote eco-friendly travel a
 - Showcase the full content of a selected blog with a clean, responsive design.. 
 
 ## 🔗 Live Link
+https://eco-adventure-bd.web.app/
 
-https://thajshopping.netlify.app/
 ## Installation
 
 This project use npm package
