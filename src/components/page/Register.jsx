@@ -11,6 +11,9 @@ const Register = () => {
     const [error, setError] = useState({})
     const navigate = useNavigate()
     const location = useLocation()
+    if(user){
+        return navigate('/')
+       }
     const handleSubmit = (e) => {
         
         // setError({"none": ""})

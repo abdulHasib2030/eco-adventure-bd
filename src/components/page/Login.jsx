@@ -6,7 +6,7 @@ import toast from "react-hot-toast";
 
 
 const Login = () => {
-    const {userLogin, setUser, googleAuth, setLoading} = useContext(AuthContext)
+    const {userLogin, setUser, user, googleAuth, setLoading} = useContext(AuthContext)
     const [error, setError] = useState({})
     const [email, setEmail] = useState(null)
     const location = useLocation()

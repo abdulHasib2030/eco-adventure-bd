@@ -11,8 +11,8 @@ const provider = new GoogleAuthProvider();
 const AuthProvider = ({children}) => {
     const [user, setUser] = useState(null)
     const [loading, setLoading] = useState(true)
-    const [blogData, setData] = useState(null)
-    const [review, setReview] = useState(null)
+    const [blogData, setData] = useState({})
+    const [review, setReview] = useState({})
 
 
     const googleAuth = () =>{
@@ -47,9 +47,16 @@ const AuthProvider = ({children}) => {
       }
 
       useEffect(()=>{
-       fetch('blog.json').then(res => res.json()).then(blog => setData(blog))
-     
+        
+          fetch('blog.json')
+          .then(res => res.json())
+          .then(blog => setData(blog))
+          .catch(err => console.log("error", err))
+        
+
+        
       }, [])
+
       useEffect(()=>{
           fetch('review.json')
           .then(res => res.json())
@@ -60,7 +67,7 @@ const AuthProvider = ({children}) => {
         return updateProfile(auth.currentUser, updateData)
      }
 
- 
+  
 
     const authInfo = {
         user, setUser,

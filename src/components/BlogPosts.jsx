@@ -30,7 +30,7 @@ const BlogPosts = () => {
                 <h3 className="text-lg font-bold mb-2">{blog.title}</h3>
                
                 <div className="text-gray-500 text-sm flex justify-between items-center pb-7 pt-2">
-                  <p>{blog.description.substring(0, 100)}... <Link className="text-blue-500  font-semibold underline ">Read More</Link></p>
+                  <p>{blog.description.substring(0, 100)}... <Link to={`/blog/${blog.id}`} className="text-blue-500  font-semibold underline ">Read More</Link></p>
                 </div>
               </div>
             </div>

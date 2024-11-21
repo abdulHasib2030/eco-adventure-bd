@@ -12,6 +12,7 @@ import PrivateRoute from "./PrivateRoute";
 import UserProfile from "../components/UserProfile";
 import UpdateProfile from "../components/UpdateProfile";
 import ForgotPasssword from "../components/page/ForgotPasssword";
+import BlogDetails from "../components/page/BlogDetails";
 
 
 const Route = createBrowserRouter([
@@ -54,6 +55,11 @@ const Route = createBrowserRouter([
             {
                 path:'/forgot-password',
                 element: <ForgotPasssword></ForgotPasssword>
+            },
+            {
+                path:'/blog/:id',
+                element:<BlogDetails></BlogDetails>,
+                loader: () => fetch('blog.json'),
             }
         ]
     },

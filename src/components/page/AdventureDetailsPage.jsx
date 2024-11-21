@@ -10,6 +10,7 @@ const AdventureDetailsPage = () => {
     const location = useLocation()
     const { setLoading } = useContext(AuthContext)
     const data = useLoaderData()
+    console.log(data);
     // setLoading(true)
     const id = (location.pathname[location.pathname.length - 1]);
     const adventure = data.find(data => data.id === parseInt(id))
