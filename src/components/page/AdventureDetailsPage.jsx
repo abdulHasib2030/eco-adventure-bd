@@ -42,7 +42,7 @@ const AdventureDetailsPage = () => {
                     <h2 className='text-center font-bold text-3xl text-transparent bg-clip-text md:text-5xl  bg-gradient-to-r from-indigo-600
                     to-purple-600'>Consultation Hours</h2>
                     <p>
-                        We are available for consultations only between <b>10:00 AM</b> and <b>8:00 PM</b>.
+                        We are available for consultations only between <b>10:00 AM</b> to <b>8:00 PM</b>.
                         Please visit during these hours for assistance.
                     </p>
                 </div>

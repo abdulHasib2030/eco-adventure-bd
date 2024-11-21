@@ -29,7 +29,7 @@ const Testimonials = () => {
         <h1 className="text-4xl font-bold text-center text-transparent bg-clip-text  bg-gradient-to-r from-indigo-500
                to-purple-400  mb-8">What Our Visitors Say</h1>
         <div
-          className="flex md:w-[300%] lg:w-[200%]  w-[400%] gap-4 pr-4"
+          className="flex md:w-[300%] lg:w-[200%]  w-[800%] gap-4 pr-4"
           style={{
             animation: "marquee 15s linear infinite",
           }}

@@ -27,6 +27,8 @@ const Login = () => {
         navigate(location?.state ? `/${location.state.id}` : '/')
       })
       .catch((err) =>{
+        toast.error("Invalid login information")
+
         setError({...error , login: "Invalid login information"})
       })
   
@@ -37,14 +39,17 @@ const Login = () => {
       .then(res =>{ setUser(res.user)
      navigate(location?.state ? `/${location.state.id}` : '/')}
     )
-      .catch (err => setError({user: "Invalid credentials"}))
+      .catch (err =>{ 
+        toast.error("Invalid login information")
+        setError({user: "Invalid credentials"})
+    })
     }
       return (
         <div
         className="my-32 flex items-center justify-center"
        
       >
-        <div className="w-full max-w-lg bg-white/80 shadow-xl rounded-lg p-6">
+        <div className="w-full max-w-lg bg-white/80 shadow-xl rounded-lg p-6 border border-gray-400">
           <h2 className="text-2xl font-bold text-center text-primary mb-4">
             Login to Your Adventure
           </h2>
@@ -69,11 +74,15 @@ const Login = () => {
                 className="input input-bordered w-full"
               />
             </div>
-            {
+            <p className="text-end text-primary mt-2 font-semibold">
+            <Link to={'/forgot-password'} >Forgot Password ?</Link>
+            </p>
+            {/* {
                 error && <div>
-                    <p className="text-red-500">{error.login}</p>
+                    <p className="text-red-500">{toast.error(error.login)}</p>
                 </div>
-            }
+            } */}
+            
             <button
               type="submit"
               className="btn btn-primary text-xl font-bold w-full mt-2 text-transparent bg-clip-text  bg-gradient-to-r from-indigo-600

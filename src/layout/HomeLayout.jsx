@@ -17,15 +17,15 @@ const HomeLayout = () => {
     return <Loading></Loading>
    }
     return (
-        <div className='md:w-11/12 mx-auto font-sora'>
+        <div >
             <Toaster></Toaster>
             {/* <ToastContainer></ToastContainer> */}
-            <header>
+            <header className='md:w-11/12 mx-auto font-mono '>
                 <nav>
                     <Navbar></Navbar>
                 </nav>
             </header>
-            <main>
+            <main className='md:w-11/12 mx-auto font-mono'>
                 <Outlet></Outlet>
             </main>
             <footer>

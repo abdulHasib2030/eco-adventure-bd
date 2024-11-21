@@ -11,6 +11,7 @@ import AdventureDetailsPage from "../components/page/AdventureDetailsPage";
 import PrivateRoute from "./PrivateRoute";
 import UserProfile from "../components/UserProfile";
 import UpdateProfile from "../components/UpdateProfile";
+import ForgotPasssword from "../components/page/ForgotPasssword";
 
 
 const Route = createBrowserRouter([
@@ -47,6 +48,10 @@ const Route = createBrowserRouter([
             {
                 path: '/update-profile',
                 element: <UpdateProfile></UpdateProfile>
+            },
+            {
+                path:'/forgot-password',
+                element: <ForgotPasssword></ForgotPasssword>
             }
         ]
     },

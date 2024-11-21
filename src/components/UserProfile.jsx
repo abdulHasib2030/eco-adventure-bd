@@ -16,7 +16,7 @@ const UserProfile = () => {
         {/* Welcome Title */}
         <h1 className="text-2xl font-bold text-gray-800 text-center mb-6">
           Welcome, <span className="text-transparent bg-clip-text md:text-5xl  bg-gradient-to-r from-indigo-600
-                    to-purple-600">{user.displayName}</span>!
+                    to-purple-600">{user.displayName}</span>
         </h1>
 
         {/* User Profile Card */}

@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { AuthContext } from '../provider/AuthProvider';
 import { Link } from 'react-router-dom';
 import Loading from './Loading';
+import logo from '../assets/sign.png'
 
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext)
@@ -9,7 +10,7 @@ const Navbar = () => {
     console.log(user);
     return (
         <div>
-            <div className="navbar justify-between bg-base-100 p-7">
+            <div className="navbar justify-between bg-base-100 py-7 ">
                 <div className="">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn p-2 py-1 btn-ghost lg:hidden">
@@ -36,8 +37,8 @@ const Navbar = () => {
                             }
                         </ul>
                     </div>
-                    <Link to={'/'} className="font-bold px-0 text-transparent bg-clip-text md:text-5xl  bg-gradient-to-r from-indigo-600
-                    to-purple-600 text-3xl">ECO-Adventure BD</Link >
+                    <Link to={'/'} className="font-bold flex items-center gap-2 px-0 text-transparent bg-clip-text md:text-4xl  bg-gradient-to-r from-indigo-600
+                    to-purple-600 text-xl"> <img src={logo} className='w-12 md:w-14' alt="" /> <span className='md:block hidden'>ECO-Adventure BD</span> </Link >
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
