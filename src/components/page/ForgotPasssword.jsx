@@ -1,6 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
+import toast from 'react-hot-toast';
+import { useLocation } from 'react-router-dom';
 
 const ForgotPasssword = () => {
+    const location = useLocation()
+    console.log(location.state.em ? location.state.em.email : "Hello");
+
+    const [emailChange, setEmailChange] = useState({email: location.state.em ? location.state.em.email : "" })
+   
+    const handleReset = () => {
+        if (emailChange.email){
+            window.location.href = "https://mail.google.com/";
+        }
+        else{
+            toast.error("Enter Email Address")
+        }
+
+      };
+console.log(emailChange);
     return (
         <div className='min-h-screen flex justify-center items-center flex-col space-y-5'>
             <label className="input input-bordered flex items-center gap-2">
@@ -14,10 +31,11 @@ const ForgotPasssword = () => {
                     <path
                         d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
                 </svg>
-                <input type="text" className="grow" placeholder="Email" />
+                <input type="text" className="grow" placeholder="Email" value={emailChange.email ? emailChange.email : '' } onChange={(e)=> setEmailChange({ email:e.target.value})} />
             </label>
-            <button className='btn btn-ghost bg-red-300'>Reset Password</button>
+            <button className='btn btn-ghost bg-red-300' onClick={handleReset}>Reset Password</button>
         </div>
+        
     );
 };
 

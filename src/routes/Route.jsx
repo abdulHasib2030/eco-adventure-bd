@@ -15,6 +15,7 @@ import ForgotPasssword from "../components/page/ForgotPasssword";
 
 
 const Route = createBrowserRouter([
+    
     {
         path:'/',
         errorElement: <ErrorPage></ErrorPage>,
@@ -23,7 +24,8 @@ const Route = createBrowserRouter([
             {
                 path:'/',
                 element: <Home></Home>,
-                loader: () => fetch('eco_adventures.json')
+                loader: () => fetch('eco_adventures.json'),
+                
             },
             {
                 path:'/login',
@@ -38,7 +40,7 @@ const Route = createBrowserRouter([
                 element: <PrivateRoute>
                     <AdventureDetailsPage></AdventureDetailsPage>
                 </PrivateRoute>,
-                loader: () => fetch('eco_adventures.json')
+                loader: () => fetch('eco_adventures.json'),
 
             },
             {

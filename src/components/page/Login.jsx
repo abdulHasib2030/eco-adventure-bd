@@ -8,6 +8,7 @@ import toast from "react-hot-toast";
 const Login = () => {
     const {userLogin, setUser, googleAuth, setLoading} = useContext(AuthContext)
     const [error, setError] = useState({})
+    const [email, setEmail] = useState(null)
     const location = useLocation()
     const navigate = useNavigate()
     // console.log(location.state.id);
@@ -61,7 +62,7 @@ const Login = () => {
               <input name="email"
                 type="email"
                 placeholder="Enter your email"
-                className="input input-bordered w-full"
+                className="input input-bordered w-full" onChange={(e)=> setEmail({...email, email:e.target.value})}
               />
             </div>
             <div>
@@ -75,7 +76,7 @@ const Login = () => {
               />
             </div>
             <p className="text-end text-primary mt-2 font-semibold">
-            <Link to={'/forgot-password'} >Forgot Password ?</Link>
+            <Link to={'/forgot-password'} state={email?.email ? {em:email}: {em:''}} >Forgot Password ?</Link>
             </p>
             {/* {
                 error && <div>
