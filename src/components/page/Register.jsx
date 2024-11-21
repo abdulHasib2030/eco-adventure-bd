@@ -17,7 +17,6 @@ const Register = () => {
     const handleSubmit = (e) => {
         
         // setError({"none": ""})
-        console.log(error);
         e.preventDefault();
         const form = new FormData(e.target)
         const name = form.get('name')
@@ -67,7 +66,6 @@ const Register = () => {
     const handleGoogleAuth = () =>{
         googleAuth()
         .then(res =>{ setUser(res.user)
-       console.log(res.user)
        navigate('/')}
       )
         .catch (err => setError({user: "Invalid credentials"}))
@@ -170,7 +168,7 @@ const Register = () => {
                         Login
                     </Link>
                 </p>
-                <div className="divider lg:divider-horizontal font-semibold">Or continue with</div>
+                <div className="divider  font-semibold">Or continue with</div>
                 <div>
                     <button onClick={handleGoogleAuth} className='flex items-center btn btn-primary text-xl font-bold w-full mt-2 text-transparent bg-clip-text  bg-gradient-to-r from-indigo-600
                     to-purple-600 hover:bg-purple-600'> <FcGoogle /> Google</button>

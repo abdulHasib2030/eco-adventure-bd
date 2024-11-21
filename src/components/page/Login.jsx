@@ -11,7 +11,6 @@ const Login = () => {
     const [email, setEmail] = useState(null)
     const location = useLocation()
     const navigate = useNavigate()
-    // console.log(location.state.id);
   
     const handleSubmit = (e) =>{
       e.preventDefault()
@@ -98,7 +97,7 @@ const Login = () => {
               Register
             </Link>
           </p>
-          <div className="divider lg:divider-horizontal font-semibold">Or continue with</div>
+          <div className="divider  font-semibold">Or continue with</div>
                 <div>
                     <button onClick={handleGoogleAuth} className='flex items-center btn btn-primary text-xl font-bold w-full mt-2 text-transparent bg-clip-text  bg-gradient-to-r from-indigo-600
                     to-purple-600 hover:bg-purple-600'> <FcGoogle /> Google</button>

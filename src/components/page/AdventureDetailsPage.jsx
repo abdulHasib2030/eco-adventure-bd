@@ -10,7 +10,6 @@ const AdventureDetailsPage = () => {
     const location = useLocation()
     const { setLoading } = useContext(AuthContext)
     const data = useLoaderData()
-    console.log(data);
     // setLoading(true)
     const id = (location.pathname[location.pathname.length - 1]);
     const adventure = data.find(data => data.id === parseInt(id))
@@ -24,7 +23,7 @@ const AdventureDetailsPage = () => {
     return (
         <div className='relative'>
             <div className="w-full flex justify-center items-center relative">
-                <img src={banner} className="w-full border border-gray-500 h-60 md:h-[420px]  object-cover" alt="" />
+                <img src={adventure.image} className="w-full border border-gray-500 h-60 md:h-[420px]  object-cover" alt="" />
                 <div className='absolute top-[40%]  text-center text-white'>
                     <h1 className='md:text-6xl text-3xl font-bold text-white'>{adventure.title}</h1>
                     <p className='md:text-xl font-semibold'>{adventure.short_description}</p>
@@ -128,7 +127,7 @@ const AdventureDetailsPage = () => {
                         <div className="bg-gray-100 p-6 rounded-lg shadow-lg">
                             <h2 className="text-xl font-bold mb-4">Book this tour</h2>
                             {
-                                currHours >= 10 && currHours <= 20 ?<a href='https://meet.google.com/' target="_blank" >
+                                currHours >= 10 && currHours < 20 ?<a href='https://meet.google.com/' target="_blank" >
                                      <button className="w-full bg-gradient-to-r from-indigo-300 to-purple-400  text-white py-2 px-6 rounded shadow-md  font-bold">
                                         Talk with Expert
                                   

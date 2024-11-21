@@ -11,7 +11,6 @@ const BlogPosts = () => {
   }, [])
   let cnt = 1;
   const {blogData} = useContext(AuthContext)
-  console.log(blogData);
 
   return (
     <div className="bg-gray-50 py-8">
@@ -25,12 +24,12 @@ const BlogPosts = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9">
           {blogData.map((blog, idx) => (
             <div key={blog.id} className="bg-white shadow-md  rounded-lg overflow-hidden"  data-aos={idx % 2 === 0 ? "fade-right":"fade-left"}>
-              <img src="https://i.ibb.co.com/FB05THp/deer-3673017-1280.jpg" alt={blog.title} className="w-full h-64 object-cover" />
+              <img src={blog.image} alt={blog.title} className="w-full h-64 object-cover" />
               <div className="p-4">
                 <h3 className="text-lg font-bold mb-2">{blog.title}</h3>
                
                 <div className="text-gray-500 text-sm flex justify-between items-center pb-7 pt-2">
-                  <p>{blog.description.substring(0, 100)}... <Link to={`/blog/${blog.id}`} className="text-blue-500  font-semibold underline ">Read More</Link></p>
+                  <p>{blog.description.substring(0, 100)}... <Link className="text-blue-500  font-semibold underline ">Read More</Link></p>
                 </div>
               </div>
             </div>

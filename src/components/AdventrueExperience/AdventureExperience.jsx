@@ -63,7 +63,7 @@ const AdventureExperience = ({data}) => {
 
               <div key={adventure.id} className="card bg-white shadow-md hover:shadow-lg p-4">
                 <figure>
-                  <img src={item1} alt={adventure.title} className="w-full h-48 object-cover" />
+                  <img src={adventure.image}  className="w-full h-72 object-cover" />
                 </figure>
                 <div className="card-body">
                   <h3 className="card-title text-xl font-semibold text-gray-700">{adventure.title}</h3>
@@ -78,7 +78,7 @@ const AdventureExperience = ({data}) => {
                     <h4 className='animate__animated animate__headShake 
                   animate__infinite  animate__delay-2s animate__slower text-xl font-semibold
                    text-transparent bg-clip-text  bg-gradient-to-r from-indigo-600
-                    to-purple-600 '>{adventure.location} | {adventure.duration}</h4>
+                    to-purple-600 text-start '>{adventure.location} | {adventure.duration}</h4>
                   </div>
                   <div className="card-actions mt-2">
                     {
