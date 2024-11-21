@@ -20,7 +20,7 @@ The purpose of this Eco-Adventure BD Website is to promote eco-friendly travel a
 ### 3. Adventure Details Page:
 - Only authenticated user access this page.
 
-- The Adventure Details Page will provide users with a comprehensive overview of all adventure services offered by "Eco-Adventure BD." This page serves as a centralized hub for users to explore various activities, understand the scope of services, and plan their adventures effectively.
+- The Adventure Details Page will provide a comprehensive overview of all adventure services offered by "Eco-Adventure BD." This page serves as a centralized hub for users to explore details, understand the scope of services, and plan their adventures effectively.
 
 ### 4. Expert Meeting Scheduler:
 -Enable users to book meetings with adventure experts, available between 10 AM to 8 PM.
