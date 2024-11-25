@@ -7,7 +7,6 @@ import ReactStars from "react-rating-stars-component";
 
 const Testimonials = () => {
     const {review} = useContext(AuthContext)
-    review.map(data=> console.log(data.id))
     return (
         <div>
                 <>

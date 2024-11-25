@@ -21,10 +21,7 @@ const UpdateProfile = () => {
             toast.error(err.message)
         })
     }
-    const handleChange = () =>{
-        console.log();
-    }
-    console.log(userData.name)
+   
     return (
         <div className='min-h-96 flex items-center justify-center'>
             <form action=""  onSubmit={handleProfileUpdate} className='w-4/5 mx-auto space-y-3 '>

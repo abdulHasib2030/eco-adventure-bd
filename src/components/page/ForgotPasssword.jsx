@@ -4,7 +4,6 @@ import { useLocation } from 'react-router-dom';
 
 const ForgotPasssword = () => {
     const location = useLocation()
-    console.log(location.state.em ? location.state.em.email : "Hello");
 
     const [emailChange, setEmailChange] = useState({email: location.state.em ? location.state.em.email : "" })
    
@@ -17,7 +16,6 @@ const ForgotPasssword = () => {
         }
 
       };
-console.log(emailChange);
     return (
         <div className='min-h-screen flex justify-center items-center flex-col space-y-5'>
             <label className="input input-bordered flex items-center gap-2">
